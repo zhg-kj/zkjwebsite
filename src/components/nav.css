@@ -1,0 +1,37 @@
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2vw;
+  z-index: 1;
+
+  width: 18vw;
+  height: 4vh;
+}
+
+.navLink {
+  color: white;
+  position: relative;
+}
+
+.navLink:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 2px;
+  display: block;
+  margin-top: 1px;
+  right: 0;
+  background: white;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+.navLink:hover:after{
+  width: 100%;
+  left: 0;
+  background: white;
+}
+
+.navLink:hover {
+  cursor: pointer;
+}

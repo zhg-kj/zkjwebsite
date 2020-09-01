@@ -1,0 +1,150 @@
+@font-face {
+  font-family: oke;
+  src: url(./assets/hello-denver-display.denver-display-regular-regular.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: quicksand;
+  src: url(./assets/Quicksand-VariableFont_wght.ttf);
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  background-color: #F0EFEB;
+
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+h1 {
+  margin: 0;
+  text-align: left;
+  line-height: 80%;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  color: #2c58ee;
+}
+
+h2 {
+  margin: 0;
+  text-align: left;
+
+  font-family: system-ui, sans-serif;
+  font-weight: lighter;
+}
+
+hr {
+  width: 400px;
+  height: 3px;
+  background-color: #2c58ee;
+  border: none;
+  margin: 15px 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  font-size: 10rem;
+}
+
+.paragraph {
+  font-family: quicksand;
+  color: #212529;
+}
+
+.white {
+  color: white;
+}
+
+.blue {
+  color: #2c58ee;
+}
+
+.lightBlue {
+  color: #527DFA;
+}
+
+.grey {
+  color: #F0EFEB;
+}
+
+.dgrey {
+  color: #D3D3D3;
+}
+
+.black {
+  color: #212529;
+}
+
+.tilted {
+  display: inline-block;
+  transform: rotate(-20deg);
+}
+
+.vertical {
+  transform: rotate(-90deg);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.centeredx {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hoverable {
+  position: relative;
+}
+
+.hoverable:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 5px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #2c58ee;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+.hoverable:hover:after{
+  width: 100%;
+  left: 0;
+  background: #2c58ee;
+}
+
+.hoverable:hover {
+  cursor: pointer;
+}
+
+.prelative {
+  position: relative;
+}
+
+.ltriangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20vw 34.64vw 20vw;
+  border-color: transparent transparent #527DFA transparent;
+
+  animation-name: spin;
+  animation-duration: 80s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
